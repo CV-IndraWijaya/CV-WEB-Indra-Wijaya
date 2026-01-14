@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize all features
     setupNavigation();
     setupScrollReveal();
-    setupSkillChart();
     setupModalHandlers();
     setupContactForm();
     setupSmoothScroll();
@@ -21,27 +20,56 @@ document.addEventListener('DOMContentLoaded', () => {
      NAVIGATION & MOBILE MENU
   ===================================================== */
   function setupNavigation() {
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-    const navLinks = navMenu.querySelectorAll('a');
-  
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      menuToggle.classList.toggle('active');
+    const navbar = document.getElementById('navbar');
+    const navbarMenu = document.getElementById('navbarMenu');
+    const navItems = navbarMenu.querySelectorAll('.nav-item');
+
+    // Scroll behavior for navbar
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
     });
-  
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        menuToggle.classList.remove('active');
+
+    // Active menu item based on scroll position
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      navItems.forEach(item => {
+        const sectionId = item.getAttribute('data-section');
+        const section = document.getElementById(sectionId);
+        
+        if (section) {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.clientHeight;
+          
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            current = sectionId;
+          }
+        }
+      });
+
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('data-section') === current) {
+          item.classList.add('active');
+        }
       });
     });
-  
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-      if (!e.target.closest('.navbar')) {
-        navMenu.classList.remove('active');
-      }
+
+    // Smooth scroll for nav links
+    navItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = item.getAttribute('data-section');
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
     });
   }
   
@@ -82,73 +110,63 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   /* =====================================================
-     SKILL CHART ANIMATION
+     EXPERIENCE DETAILS TOGGLE
   ===================================================== */
-  function setupSkillChart() {
-    const skillItems = document.querySelectorAll('.skill-item');
-  
-    const animateSkills = () => {
-      skillItems.forEach(item => {
-        const percent = Number(item.dataset.skill);
-        const circles = item.querySelectorAll('circle.skill-progress');
-        const valueDisplay = item.querySelector('.skill-value');
-  
-        if (circles.length > 0) {
-          const circle = circles[0];
-          const circumference = 2 * Math.PI * 52; // radius = 52
-  
-          circle.style.strokeDasharray = circumference;
-          circle.style.strokeDashoffset = circumference;
-  
-          // Check if element is in viewport
-          const rect = item.getBoundingClientRect();
-          if (rect.top < window.innerHeight && rect.top > 0) {
-            // Animate offset
-            const offset = circumference - (circumference * percent) / 100;
-            circle.style.transition = 'stroke-dashoffset 2s ease';
-            circle.style.strokeDashoffset = offset;
-  
-            // Animate number
-            if (valueDisplay && valueDisplay.textContent === '0%') {
-              let currentValue = 0;
-              const increment = Math.ceil(percent / 60);
-              const interval = setInterval(() => {
-                currentValue += increment;
-                if (currentValue >= percent) {
-                  valueDisplay.textContent = percent + '%';
-                  clearInterval(interval);
-                } else {
-                  valueDisplay.textContent = currentValue + '%';
-                }
-              }, 30);
-            }
-          }
-        }
-      });
-    };
-  
-    window.addEventListener('scroll', animateSkills);
-    animateSkills();
+  function toggleDetail(btn) {
+    const card = btn.closest('.experience-card');
+    const details = card.querySelector('.experience-details');
+    const isOpen = details.style.display !== 'none';
+
+    // Close all other details
+    document.querySelectorAll('.experience-details').forEach(detail => {
+      detail.style.display = 'none';
+    });
+    document.querySelectorAll('.toggle-btn').forEach(button => {
+      button.classList.remove('expanded');
+    });
+
+    // Toggle current
+    if (!isOpen) {
+      details.style.display = 'block';
+      btn.classList.add('expanded');
+    } else {
+      details.style.display = 'none';
+      btn.classList.remove('expanded');
+    }
+  }
+
+  /* =====================================================
+     PROJECT DETAILS TOGGLE
+  ===================================================== */
+  function toggleProjectDetail(btn) {
+    const card = btn.closest('.project-card');
+    const details = card.querySelector('.project-details');
+    const isOpen = details.style.display !== 'none';
+
+    // Close all other details
+    document.querySelectorAll('.project-details').forEach(detail => {
+      detail.style.display = 'none';
+    });
+    document.querySelectorAll('.project-toggle').forEach(button => {
+      button.classList.remove('expanded');
+    });
+
+    // Toggle current
+    if (!isOpen) {
+      details.style.display = 'block';
+      btn.classList.add('expanded');
+    } else {
+      details.style.display = 'none';
+      btn.classList.remove('expanded');
+    }
   }
   
   /* =====================================================
-     MODAL HANDLERS
+     MODAL HANDLERS (SUCCESS MODAL)
   ===================================================== */
   function setupModalHandlers() {
-    const detailButtons = document.querySelectorAll('.detail-btn');
     const modals = document.querySelectorAll('.modal');
     const closeButtons = document.querySelectorAll('.modal-close');
-  
-    detailButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const modalId = btn.dataset.modal;
-        const modal = document.getElementById(modalId);
-        if (modal) {
-          modal.classList.add('active');
-          document.body.style.overflow = 'hidden';
-        }
-      });
-    });
   
     closeButtons.forEach(btn => {
       btn.addEventListener('click', (e) => {
@@ -262,6 +280,7 @@ function setupContactForm() {
   ===================================================== */
   function setupScrollTop() {
     const scrollTop = document.getElementById('scrollTop');
+    const actionBar = document.getElementById('actionBar');
   
     if (scrollTop) {
       window.addEventListener('scroll', () => {
@@ -277,6 +296,17 @@ function setupContactForm() {
           top: 0,
           behavior: 'smooth'
         });
+      });
+    }
+
+    if (actionBar) {
+      window.addEventListener('scroll', () => {
+        const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+        if (scrollPercent > 20) {
+          actionBar.classList.add('visible');
+        } else {
+          actionBar.classList.remove('visible');
+        }
       });
     }
   }
