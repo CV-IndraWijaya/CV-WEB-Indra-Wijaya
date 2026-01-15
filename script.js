@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const navbarMenu = document.getElementById('navbarMenu');
     const navItems = navbarMenu.querySelectorAll('.nav-item');
 
+    const navbarToggle = document.getElementById('navbarToggle');
+
     // Scroll behavior for navbar
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
@@ -69,8 +71,48 @@ document.addEventListener('DOMContentLoaded', () => {
         if (targetSection) {
           targetSection.scrollIntoView({ behavior: 'smooth' });
         }
+        // close mobile menu after click
+        if (navbarMenu && navbarMenu.classList.contains('open')) {
+          navbarMenu.classList.remove('open');
+          if (navbarToggle) navbarToggle.setAttribute('aria-expanded', 'false');
+        }
       });
     });
+
+    // Mobile toggle button
+    if (navbarToggle && navbarMenu) {
+      navbarToggle.addEventListener('click', () => {
+        const isOpen = navbarMenu.classList.toggle('open');
+        navbarToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Close menu on resize to desktop
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && navbarMenu.classList.contains('open')) {
+          navbarMenu.classList.remove('open');
+          navbarToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Close on outside click
+      document.addEventListener('click', (e) => {
+        const target = e.target;
+        if (navbarMenu.classList.contains('open') && navbarToggle && navbarMenu) {
+          if (!navbarMenu.contains(target) && !navbarToggle.contains(target)) {
+            navbarMenu.classList.remove('open');
+            navbarToggle.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+
+      // Close on Escape
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navbarMenu.classList.contains('open')) {
+          navbarMenu.classList.remove('open');
+          navbarToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
   }
   
   /* =====================================================

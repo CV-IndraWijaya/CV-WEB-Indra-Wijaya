@@ -31,7 +31,6 @@
     --success: #16a34a;
     --warning: #d97706;
     --danger: #dc2626;
-    --light: #1e293b;
     --border: #334155;
   }
 }
@@ -235,6 +234,25 @@ body {
   display: none;
 }
 
+/* Mobile hamburger toggle */
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f8fafc;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar-toggle:hover {
+  color: #3b82f6;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .navbar {
@@ -250,6 +268,57 @@ body {
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  /* Mobile menu: hidden by default, expands when .open */
+  .navbar-toggle { display: flex; }
+  .navbar-menu {
+    position: absolute;
+    top: 68px;
+    right: 16px;
+    width: min(320px, 92%);
+    background: rgba(30,41,59,0.9);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(59,130,246,0.12);
+    border-radius: 12px;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: max-height 0.28s ease, opacity 0.28s ease;
+    opacity: 0;
+    z-index: 95;
+  }
+
+  .navbar-menu.open {
+    max-height: 420px;
+    opacity: 1;
+    padding: 10px 12px 12px;
+  }
+
+  .navbar-menu .nav-item {
+    padding: 12px 10px;
+    font-size: 15px;
+    color: var(--light);
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* ensure nav items meet 44px touch target */
+  .navbar-menu .nav-item {
+    min-height: 44px;
+    border-radius: 8px;
+    padding-left: 14px;
+  }
+
+  .navbar-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    padding: 6px;
+    color: #ffffff;
   }
 
   .nav-item {
@@ -285,6 +354,11 @@ body {
   .nav-item.active .nav-indicator {
     bottom: -4px;
     height: 2px;
+  }
+
+  /* Ensure toggle remains visible on small mobile */
+  .navbar-toggle {
+    color: #ffffff;
   }
 }
 
@@ -3097,4 +3171,16 @@ body {
   .modal-body p {
     font-size: 12px;
   }
+
+  /* improve action button tap targets globally on small screens */
+  .action-btn {
+    min-height: 44px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}
+
+/* ensure mobile menu appears above sticky elements */
+.navbar-menu {
+  z-index: 110;
 }
