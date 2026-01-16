@@ -1,998 +1,1025 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indra Wijaya | Junior Data Analyst | Data Reporting & Business Insight</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Indra Wijaya | Junior Data Analyst | Data Reporting & Business Insight
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Prism.js for Code Syntax Highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+  </head>
 
-<body>
-
-<!-- ================= LOADING SCREEN ================= -->
-<div class="loading-screen" id="loadingScreen">
-  <div class="loader"></div>
-  <p>Loading...</p>
-</div>
-
-<!-- ================= ACTION BAR ================= -->
-<div class="action-bar" id="actionBar">
-  <a href="assets/cv/CV_Indra_Wijaya.pdf" download class="action-btn download-btn" title="Download CV">
-    <i class="fas fa-file-pdf"></i>
-    <span>Download CV</span>
-  </a>
-  <a href="https://www.linkedin.com/in/indrawijaya111" target="_blank" class="action-btn contact-btn" title="LinkedIn Profile">
-    <i class="fab fa-linkedin-in"></i>
-    <span>LinkedIn</span>
-  </a>
-</div>
-
-<!-- ================= NAVBAR ================= -->
-<header class="navbar" id="navbar">
-  <div class="navbar-container">
-    <div class="navbar-logo">
-      <span class="logo-icon">IW</span>
-      <span class="logo-text">Indra Wijaya</span>
+  <body>
+    <!-- ================= LOADING SCREEN ================= -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loader"></div>
+      <p>Loading...</p>
     </div>
-    <button class="navbar-toggle" id="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars"></i>
-    </button>
-    <nav class="navbar-menu" id="navbarMenu">
-      <a href="#home" class="nav-item active" data-section="home">
-        <span>Home</span>
-        <span class="nav-indicator"></span>
-      </a>
-      <a href="#skills" class="nav-item" data-section="skills">
-        <span>Skills</span>
-        <span class="nav-indicator"></span>
-      </a>
-      <a href="#experience" class="nav-item" data-section="experience">
-        <span>Experience</span>
-        <span class="nav-indicator"></span>
-      </a>
-      <a href="#projects" class="nav-item" data-section="projects">
-        <span>Projects</span>
-        <span class="nav-indicator"></span>
-      </a>
-      <a href="#certifications" class="nav-item" data-section="certifications">
-        <span>Certifications</span>
-        <span class="nav-indicator"></span>
-      </a>
-      <a href="#education" class="nav-item" data-section="education">
-        <span>Education</span>
-        <span class="nav-indicator"></span>
-      </a>
-      <a href="#contact" class="nav-item nav-contact" data-section="contact">
-        <span>Contact</span>
-        <span class="nav-indicator"></span>
-      </a>
-    </nav>
-  </div>
-</header>
-</header>
 
-<!-- ================= HERO / HOME ================= -->
-<section id="home" class="section hero hero-premium reveal">
-  <div class="hero-container">
-    <!-- Left Column: Text Content -->
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-headline">Junior Data Analyst</h1>
-        <p class="hero-subheadline">
-          <span class="skill-highlight">Data Reporting</span>
-          <span class="skill-highlight">Business Insight</span> 
-          <span class="skill-highlight">Excel & SQL</span>
-        </p>
-        
-        <p class="hero-description">
-          Junior Data analyst dengan 2+ tahun pengalaman mengolah, menganalisis, dan melaporkan data operasional & penjualan. Fokus pada akurasi data, analisis terstruktur, dan laporan real-time untuk mendukung keputusan bisnis berbasis data.
-        </p>
+    <!-- ================= ACTION BAR ================= -->
+    <div class="action-bar" id="actionBar">
+      <a
+        href="assets/cv/CV_Indra_Wijaya.pdf"
+        download
+        class="action-btn download-btn"
+        title="Download CV"
+      >
+        <i class="fas fa-file-pdf"></i>
+        <span>Download CV</span>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/indrawijaya111"
+        target="_blank"
+        class="action-btn contact-btn"
+        title="LinkedIn Profile"
+      >
+        <i class="fab fa-linkedin-in"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
 
-        <!-- CTA Buttons -->
-        <div class="hero-actions">
-          <a href="#experience" class="btn btn-primary">
-            <i class="fas fa-briefcase"></i> View Experience
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">
+          <span class="logo-icon">IW</span>
+          <span class="logo-text">Indra Wijaya</span>
+        </div>
+        <button
+          class="navbar-toggle"
+          id="navbarToggle"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navbar-menu" id="navbarMenu">
+          <a href="#home" class="nav-item active" data-section="home">
+            <span>Home</span>
+            <span class="nav-indicator"></span>
           </a>
-          <a href="assets/cv/CV_Indra_Wijaya.pdf" download class="btn btn-secondary">
-            <i class="fas fa-download"></i> Download CV
+          <a href="#skills" class="nav-item" data-section="skills">
+            <span>Skills</span>
+            <span class="nav-indicator"></span>
           </a>
-        </div>
+          <a href="#experience" class="nav-item" data-section="experience">
+            <span>Experience</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a href="#projects" class="nav-item" data-section="projects">
+            <span>Projects</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a
+            href="#certifications"
+            class="nav-item"
+            data-section="certifications"
+          >
+            <span>Certifications</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a href="#education" class="nav-item" data-section="education">
+            <span>Education</span>
+            <span class="nav-indicator"></span>
+          </a>
+          <a
+            href="#contact"
+            class="nav-item nav-contact"
+            data-section="contact"
+          >
+            <span>Contact</span>
+            <span class="nav-indicator"></span>
+          </a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- Right Column: Highlight Card -->
-    <div class="hero-card">
-      <div class="card-header">
-        <i class="fas fa-user-tie"></i>
-        <span>Professional Profile</span>
-      </div>
+    <!-- ================= HERO / HOME ================= -->
+    <section id="home" class="section hero hero-premium reveal">
+      <div class="hero-container">
+        <!-- Left Column: Text Content -->
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-headline">Junior Data Analyst</h1>
+            <p class="hero-subheadline">
+              <span class="skill-highlight">Data Reporting</span>
+              <span class="skill-highlight">Business Insight</span>
+              <span class="skill-highlight">Python</span>
+              <span class="skill-highlight">Excel</span>
+              <span class="skill-highlight">SQL</span>
+              <span class="skill-highlight">Tableau</span>
+            </p>
 
-      <!-- Stats Grid -->
-      <div class="card-stats">
-        <div class="stat-item">
-          <div class="stat-number">2+</div>
-          <div class="stat-label">Years Experience</div>
-          <div class="stat-detail">Data & Reporting</div>
-        </div>
+            <p class="hero-description">
+              Junior Data analyst dengan 2+ tahun pengalaman mengolah,
+              menganalisis, dan melaporkan data operasional & penjualan. Fokus
+              pada akurasi data, analisis terstruktur, dan laporan real-time
+              untuk mendukung keputusan bisnis berbasis data.
+            </p>
 
-        <div class="stat-item">
-          <div class="stat-number">98%</div>
-          <div class="stat-label">Data Accuracy</div>
-          <div class="stat-detail">Consistent</div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-number">50+</div>
-          <div class="stat-label">Reports / Month</div>
-          <div class="stat-detail">Average</div>
-        </div>
-
-        <div class="stat-item">
-          <div class="stat-number">
-            <i class="fas fa-check-circle"></i>
-          </div>
-          <div class="stat-label">Availability</div>
-          <div class="stat-detail">Open to Work</div>
-        </div>
-      </div>
-
-      <!-- Skills Pills -->
-      <div class="card-skills">
-        <h4>Key Skills</h4>
-        <div class="skills-list">
-          <span class="skill-pill">Excel</span>
-          <span class="skill-pill">SQL</span>
-          <span class="skill-pill">Data Analysis</span>
-          <span class="skill-pill">Reporting</span>
-        </div>
-      </div>
-
-      <!-- CTA Link -->
-      <div class="card-footer">
-        <a href="#contact" class="contact-link">
-          Get in Touch <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= SKILLS ================= -->
-<section id="skills" class="section reveal skills-section">
-  <h2><i class="fas fa-wrench"></i> Skills</h2>
-
-  <!-- Modern Skills Cards -->
-  <div class="skills-cards-container">
-    <!-- Card 1: Technical & Tools -->
-    <div class="skill-card">
-      <div class="skill-card-header">
-        <i class="fas fa-chart-bar"></i>
-        <h3>Technical & Tools</h3>
-      </div>
-      <ul class="skill-list">
-        <li><i class="fas fa-check-circle"></i> Microsoft Excel (Pivot Table, VLOOKUP, SUMIF, XLOOKUP)</li>
-        <li><i class="fas fa-check-circle"></i> SQL (Basic: SELECT, WHERE, GROUP BY)</li>
-        <li><i class="fas fa-check-circle"></i> Data Cleaning & Validation</li>
-        <li><i class="fas fa-check-circle"></i> Data Reporting & Dashboard</li>
-        <li><i class="fas fa-check-circle"></i> Google Sheets</li>
-      </ul>
-    </div>
-
-    <!-- Card 2: Data & Analytical Skills -->
-    <div class="skill-card">
-      <div class="skill-card-header">
-        <i class="fas fa-search"></i>
-        <h3>Data & Analytical Skills</h3>
-      </div>
-      <ul class="skill-list">
-        <li><i class="fas fa-check-circle"></i> Data Analysis & Interpretation</li>
-        <li><i class="fas fa-check-circle"></i> Trend Analysis</li>
-        <li><i class="fas fa-check-circle"></i> KPI Monitoring</li>
-        <li><i class="fas fa-check-circle"></i> Data Accuracy & Quality Control</li>
-        <li><i class="fas fa-check-circle"></i> Analytical Thinking</li>
-      </ul>
-    </div>
-
-    <!-- Card 3: Business & Collaboration -->
-    <div class="skill-card">
-      <div class="skill-card-header">
-        <i class="fas fa-users"></i>
-        <h3>Business & Collaboration</h3>
-      </div>
-      <ul class="skill-list">
-        <li><i class="fas fa-check-circle"></i> Stakeholder Communication</li>
-        <li><i class="fas fa-check-circle"></i> Cross-functional Coordination</li>
-        <li><i class="fas fa-check-circle"></i> Problem Solving</li>
-        <li><i class="fas fa-check-circle"></i> Attention to Detail</li>
-        <li><i class="fas fa-check-circle"></i> Time Management</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- ================= EXPERIENCE ================= -->
-<section id="experience" class="section reveal experience-section">
-  <h2><i class="fas fa-briefcase"></i> Experience</h2>
-
-  <div class="experience-timeline">
-    <!-- Card 1: Admin Sales -->
-    <article class="experience-card">
-      <div class="experience-card-header">
-        <div class="header-content">
-          <h3>Admin Sales (Intern)</h3>
-          <p class="company"><i class="fas fa-building"></i> PT Indo Kimia Jaya</p>
-          <span class="period"><i class="fas fa-calendar"></i> Jul 2025 – Oct 2025 (3 bulan)</span>
-        </div>
-      </div>
-
-      <p class="experience-summary">Mengelola dan menganalisis data sales & KPI operasional dengan fokus pada akurasi data dan koordinasi lintas divisi.</p>
-
-      <!-- Metrics Badges -->
-      <div class="metrics-badges">
-        <div class="metric-badge">
-          <span class="metric-value">99%</span>
-          <span class="metric-label">Akurasi Data</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">50+</span>
-          <span class="metric-label">Laporan/Bulan</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">On-Time</span>
-          <span class="metric-label">Reporting</span>
-        </div>
-      </div>
-
-      <!-- Expandable Details -->
-      <div class="experience-toggle">
-        <button class="toggle-btn" onclick="toggleDetail(this)">
-          <i class="fas fa-chevron-down"></i> Lihat Detail
-        </button>
-      </div>
-
-      <div class="experience-details" style="display: none;">
-        <div class="detail-section">
-          <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
-          <ul>
-            <li>Mengelola dan menganalisis data sales dan klaim operasional</li>
-            <li>Monitoring KPI sales dan performa operasional</li>
-            <li>Koordinasi data lintas divisi untuk decision making</li>
-            <li>Validasi akurasi data dan ketepatan waktu reporting</li>
-          </ul>
-        </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
-          <div class="skills-tags">
-            <span class="skill-tag">Excel</span>
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Data Analysis</span>
-            <span class="skill-tag">Pivot Table</span>
-            <span class="skill-tag">Reporting</span>
-            <span class="skill-tag">Google Sheets</span>
+            <!-- CTA Buttons -->
+            <div class="hero-actions">
+              <a href="#experience" class="btn btn-primary">
+                <i class="fas fa-briefcase"></i> View Experience
+              </a>
+              <a
+                href="assets/cv/CV_Indra_Wijaya.pdf"
+                download
+                class="btn btn-secondary"
+              >
+                <i class="fas fa-download"></i> Download CV
+              </a>
+            </div>
           </div>
         </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-star"></i> Pencapaian</h4>
-          <ul>
-            <li>Mencapai 99% akurasi data dalam laporan bulanan</li>
-            <li>Meningkatkan efisiensi reporting sebesar 30%</li>
-            <li>Konsisten on-time dalam deliverable laporan</li>
-          </ul>
-        </div>
-      </div>
-    </article>
 
-    <!-- Card 2: Data Reporting & Admin Support -->
-    <article class="experience-card">
-      <div class="experience-card-header">
-        <div class="header-content">
-          <h3>Data Reporting & Admin Support</h3>
-          <p class="company"><i class="fas fa-building"></i> PT Sastra Indah Megahmas</p>
-          <span class="period"><i class="fas fa-calendar"></i> Mar 2024 – Mar 2025 (1 tahun)</span>
-        </div>
-      </div>
+        <!-- Right Column: Highlight Card -->
+        <div class="hero-card">
+          <div class="card-header">
+            <i class="fas fa-user-tie"></i>
+            <span>Professional Profile</span>
+          </div>
 
-      <p class="experience-summary">Menyusun laporan data operasional & penjualan dengan fokus pada akurasi, analisis mendalam, dan support decision making.</p>
+          <!-- Stats Grid -->
+          <div class="card-stats">
+            <div class="stat-item">
+              <div class="stat-number">2+</div>
+              <div class="stat-label">Years Experience</div>
+              <div class="stat-detail">Data & Reporting</div>
+            </div>
 
-      <!-- Metrics Badges -->
-      <div class="metrics-badges">
-        <div class="metric-badge">
-          <span class="metric-value">150+</span>
-          <span class="metric-label">Laporan/Tahun</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">95%</span>
-          <span class="metric-label">On-Time Delivery</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">98%</span>
-          <span class="metric-label">Data Accuracy</span>
-        </div>
-      </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Data Accuracy</div>
+              <div class="stat-detail">Consistent</div>
+            </div>
 
-      <!-- Expandable Details -->
-      <div class="experience-toggle">
-        <button class="toggle-btn" onclick="toggleDetail(this)">
-          <i class="fas fa-chevron-down"></i> Lihat Detail
-        </button>
-      </div>
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Reports / Month</div>
+              <div class="stat-detail">Average</div>
+            </div>
 
-      <div class="experience-details" style="display: none;">
-        <div class="detail-section">
-          <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
-          <ul>
-            <li>Menyusun laporan dan analisis data operasional & penjualan</li>
-            <li>Menyediakan data pendukung untuk keputusan manajemen</li>
-            <li>Menjaga akurasi dan ketepatan waktu reporting</li>
-            <li>Analisis trend dan memberikan insight bisnis</li>
-          </ul>
-        </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
-          <div class="skills-tags">
-            <span class="skill-tag">Excel Advanced</span>
-            <span class="skill-tag">VLOOKUP</span>
-            <span class="skill-tag">Pivot</span>
-            <span class="skill-tag">Data Analysis</span>
-            <span class="skill-tag">Dashboard</span>
-            <span class="skill-tag">Reporting</span>
+            <div class="stat-item">
+              <div class="stat-number">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="stat-label">Availability</div>
+              <div class="stat-detail">Open to Work</div>
+            </div>
+          </div>
+
+          <!-- Skills Pills -->
+          <div class="card-skills">
+            <h4>Key Skills</h4>
+            <div class="skills-list">
+              <span class="skill-pill">Data Analysis</span>
+              <span class="skill-pill">Python</span>
+              <span class="skill-pill">Excel</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">Tableau</span>
+              <span class="skill-pill">Reporting</span>
+            </div>
+          </div>
+
+          <!-- CTA Link -->
+          <div class="card-footer">
+            <a href="#contact" class="contact-link">
+              Get in Touch <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-star"></i> Pencapaian</h4>
-          <ul>
-            <li>Konsisten mencapai 98%+ akurasi data</li>
-            <li>Menangani 150+ laporan per tahun</li>
-            <li>Meningkatkan efficiency reporting sebesar 25%</li>
-          </ul>
-        </div>
       </div>
-    </article>
+    </section>
 
-    <!-- Card 3: MIS -->
-    <article class="experience-card">
-      <div class="experience-card-header">
-        <div class="header-content">
-          <h3>Management Information System (MIS)</h3>
-          <p class="company"><i class="fas fa-building"></i> PT Trimindo Jaya Mandiri</p>
-          <span class="period"><i class="fas fa-calendar"></i> Jul 2022 – Mar 2023 (8 bulan)</span>
-        </div>
-      </div>
+    <!-- ================= SKILLS ================= -->
+    <section id="skills" class="section reveal skills-section">
+      <h2><i class="fas fa-wrench"></i> Skills</h2>
 
-      <p class="experience-summary">Pengelolaan database internal dan sistem informasi perusahaan dengan penyusunan laporan manajemen berkala.</p>
-
-      <!-- Metrics Badges -->
-      <div class="metrics-badges">
-        <div class="metric-badge">
-          <span class="metric-value">24/7</span>
-          <span class="metric-label">System Support</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">100+</span>
-          <span class="metric-label">Database Records</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">Weekly</span>
-          <span class="metric-label">Reports</span>
-        </div>
-      </div>
-
-      <!-- Expandable Details -->
-      <div class="experience-toggle">
-        <button class="toggle-btn" onclick="toggleDetail(this)">
-          <i class="fas fa-chevron-down"></i> Lihat Detail
-        </button>
-      </div>
-
-      <div class="experience-details" style="display: none;">
-        <div class="detail-section">
-          <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
-          <ul>
-            <li>Pengelolaan database dan sistem informasi internal</li>
-            <li>Penyusunan laporan manajemen berkala</li>
-            <li>Dukungan data untuk operasional perusahaan</li>
-            <li>Backup dan maintenance database reguler</li>
-          </ul>
-        </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
-          <div class="skills-tags">
-            <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Database</span>
-            <span class="skill-tag">Oracle</span>
-            <span class="skill-tag">Excel</span>
-            <span class="skill-tag">Data Management</span>
-            <span class="skill-tag">Query</span>
+      <!-- Modern Skills Cards -->
+      <div class="skills-cards-container">
+        <!-- Card 1: Technical & Tools -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <i class="fas fa-chart-bar"></i>
+            <h3>Technical & Tools</h3>
           </div>
-        </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-star"></i> Pencapaian</h4>
-          <ul>
-            <li>Maintenance database 24/7 tanpa downtime</li>
-            <li>Mengelola 100+ database records dengan akurat</li>
-            <li>Automasi 30% report generation process</li>
+          <ul class="skill-list">
+            <li><i class="fas fa-check-circle"></i> Microsoft Excel</li>
+            <li><i class="fas fa-check-circle"></i> SQL</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Data Cleaning & Validation
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Data Reporting & Dashboard
+            </li>
+            <li><i class="fas fa-check-circle"></i> Python</li>
+            <li><i class="fas fa-check-circle"></i> Tableau</li>
           </ul>
         </div>
-      </div>
-    </article>
 
-    <!-- Card 4: Staff Administrasi -->
-    <article class="experience-card">
-      <div class="experience-card-header">
-        <div class="header-content">
-          <h3>Staff Administrasi</h3>
-          <p class="company"><i class="fas fa-building"></i> PT Citra Sukses Nusantara</p>
-          <span class="period"><i class="fas fa-calendar"></i> Apr 2021 – Aug 2021 (4 bulan)</span>
-        </div>
-      </div>
-
-      <p class="experience-summary">Pengolahan data operasional dengan validasi akurasi dan pengecekan berkala untuk memastikan data quality.</p>
-
-      <!-- Metrics Badges -->
-      <div class="metrics-badges">
-        <div class="metric-badge">
-          <span class="metric-value">500+</span>
-          <span class="metric-label">Data Records</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">99%</span>
-          <span class="metric-label">Accuracy</span>
-        </div>
-        <div class="metric-badge">
-          <span class="metric-value">100%</span>
-          <span class="metric-label">On-Time</span>
-        </div>
-      </div>
-
-      <!-- Expandable Details -->
-      <div class="experience-toggle">
-        <button class="toggle-btn" onclick="toggleDetail(this)">
-          <i class="fas fa-chevron-down"></i> Lihat Detail
-        </button>
-      </div>
-
-      <div class="experience-details" style="display: none;">
-        <div class="detail-section">
-          <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
-          <ul>
-            <li>Pengolahan data dan laporan operasional</li>
-            <li>Validasi dan pengecekan akurasi data</li>
-            <li>Entry dan management database</li>
-            <li>Support administrative tasks</li>
-          </ul>
-        </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
-          <div class="skills-tags">
-            <span class="skill-tag">Data Entry</span>
-            <span class="skill-tag">Excel</span>
-            <span class="skill-tag">Validation</span>
-            <span class="skill-tag">Database</span>
-            <span class="skill-tag">Documentation</span>
-            <span class="skill-tag">Organization</span>
+        <!-- Card 2: Data & Analytical Skills -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <i class="fas fa-search"></i>
+            <h3>Data & Analytical Skills</h3>
           </div>
+          <ul class="skill-list">
+            <li>
+              <i class="fas fa-check-circle"></i> Data Analysis & Interpretation
+            </li>
+            <li><i class="fas fa-check-circle"></i> Trend Analysis</li>
+            <li><i class="fas fa-check-circle"></i> KPI Monitoring</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Data Accuracy & Quality
+              Control
+            </li>
+            <li><i class="fas fa-check-circle"></i> Analytical Thinking</li>
+          </ul>
         </div>
-        <div class="detail-section">
-          <h4><i class="fas fa-star"></i> Pencapaian</h4>
-          <ul>
-            <li>Olah 500+ data records dengan 99% akurasi</li>
-            <li>Zero error dalam data validation</li>
-            <li>Semua deliverable on-time</li>
+
+        <!-- Card 3: Business & Collaboration -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <i class="fas fa-users"></i>
+            <h3>Business & Collaboration</h3>
+          </div>
+          <ul class="skill-list">
+            <li>
+              <i class="fas fa-check-circle"></i> Stakeholder Communication
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Cross-functional Coordination
+            </li>
+            <li><i class="fas fa-check-circle"></i> Problem Solving</li>
+            <li><i class="fas fa-check-circle"></i> Attention to Detail</li>
+            <li><i class="fas fa-check-circle"></i> Time Management</li>
           </ul>
         </div>
       </div>
-    </article>
-  </div>
-</section>
+    </section>
 
-  </div>
-</section>
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section reveal experience-section">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
 
+      <div class="experience-timeline">
+        <!-- Card 1: Admin Sales -->
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="header-content">
+              <h3>Admin Sales (Intern)</h3>
+              <p class="company">
+                <i class="fas fa-building"></i> PT Indo Kimia Jaya
+              </p>
+              <span class="period"
+                ><i class="fas fa-calendar"></i> Jul 2025 – Oct 2025 (3
+                bulan)</span
+              >
+            </div>
+          </div>
 
+          <p class="experience-summary">
+            Mengelola dan menganalisis data sales & KPI operasional dengan fokus
+            pada akurasi data dan koordinasi lintas divisi.
+          </p>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="section reveal projects-section">
-  <h2><i class="fas fa-chart-line"></i> Projects</h2>
-  <p class="section-subtitle">Selected data analysis projects focused on reporting accuracy and business insight.</p>
+          <!-- Metrics Badges -->
+          <div class="metrics-badges">
+            <div class="metric-badge">
+              <span class="metric-value">99%</span>
+              <span class="metric-label">Akurasi Data</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">50+</span>
+              <span class="metric-label">Laporan/Bulan</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">On-Time</span>
+              <span class="metric-label">Reporting</span>
+            </div>
+          </div>
 
-  <div class="projects-container">
-    <!-- Project 1: Sales Performance Dashboard -->
-    <article class="project-card">
-      <h3 class="project-title">Sales Performance Dashboard</h3>
-      
-      <div class="project-meta">
-        <div class="project-item">
-          <span class="meta-label">Context:</span>
-          <p>Fragmented sales data across multiple sheets causing delayed decision-making</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Approach:</span>
-          <p>Consolidated data using Excel Pivot Tables & VLOOKUP; created automated dashboard</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Outcome:</span>
-          <p>Reduced reporting time by 60%, improved data accuracy to 98%</p>
-        </div>
+          <!-- Expandable Details -->
+          <div class="experience-toggle">
+            <button class="toggle-btn" onclick="toggleDetail(this)">
+              <i class="fas fa-chevron-down"></i> Lihat Detail
+            </button>
+          </div>
+
+          <div class="experience-details" style="display: none">
+            <div class="detail-section">
+              <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
+              <ul>
+                <li>
+                  Mengelola dan menganalisis data sales dan klaim operasional
+                </li>
+                <li>Monitoring KPI sales dan performa operasional</li>
+                <li>Koordinasi data lintas divisi untuk decision making</li>
+                <li>Validasi akurasi data dan ketepatan waktu reporting</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Pivot Table</span>
+                <span class="skill-tag">Reporting</span>
+                <span class="skill-tag">Google Sheets</span>
+              </div>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-star"></i> Pencapaian</h4>
+              <ul>
+                <li>Mencapai 99% akurasi data dalam laporan bulanan</li>
+                <li>Meningkatkan efisiensi reporting sebesar 30%</li>
+                <li>Konsisten on-time dalam deliverable laporan</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Data Reporting & Admin Support -->
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="header-content">
+              <h3>Data Reporting & Admin Support</h3>
+              <p class="company">
+                <i class="fas fa-building"></i> PT Sastra Indah Megahmas
+              </p>
+              <span class="period"
+                ><i class="fas fa-calendar"></i> Mar 2024 – Mar 2025 (1
+                tahun)</span
+              >
+            </div>
+          </div>
+
+          <p class="experience-summary">
+            Menyusun laporan data operasional & penjualan dengan fokus pada
+            akurasi, analisis mendalam, dan support decision making.
+          </p>
+
+          <!-- Metrics Badges -->
+          <div class="metrics-badges">
+            <div class="metric-badge">
+              <span class="metric-value">150+</span>
+              <span class="metric-label">Laporan/Tahun</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">95%</span>
+              <span class="metric-label">On-Time Delivery</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">98%</span>
+              <span class="metric-label">Data Accuracy</span>
+            </div>
+          </div>
+
+          <!-- Expandable Details -->
+          <div class="experience-toggle">
+            <button class="toggle-btn" onclick="toggleDetail(this)">
+              <i class="fas fa-chevron-down"></i> Lihat Detail
+            </button>
+          </div>
+
+          <div class="experience-details" style="display: none">
+            <div class="detail-section">
+              <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
+              <ul>
+                <li>
+                  Menyusun laporan dan analisis data operasional & penjualan
+                </li>
+                <li>Menyediakan data pendukung untuk keputusan manajemen</li>
+                <li>Menjaga akurasi dan ketepatan waktu reporting</li>
+                <li>Analisis trend dan memberikan insight bisnis</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">Excel Advanced</span>
+                <span class="skill-tag">VLOOKUP</span>
+                <span class="skill-tag">Pivot</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Dashboard</span>
+                <span class="skill-tag">Reporting</span>
+              </div>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-star"></i> Pencapaian</h4>
+              <ul>
+                <li>Konsisten mencapai 98%+ akurasi data</li>
+                <li>Menangani 150+ laporan per tahun</li>
+                <li>Meningkatkan efficiency reporting sebesar 25%</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: MIS -->
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="header-content">
+              <h3>Management Information System (MIS)</h3>
+              <p class="company">
+                <i class="fas fa-building"></i> PT Trimindo Jaya Mandiri
+              </p>
+              <span class="period"
+                ><i class="fas fa-calendar"></i> Jul 2022 – Mar 2023 (8
+                bulan)</span
+              >
+            </div>
+          </div>
+
+          <p class="experience-summary">
+            Pengelolaan database internal dan sistem informasi perusahaan dengan
+            penyusunan laporan manajemen berkala.
+          </p>
+
+          <!-- Metrics Badges -->
+          <div class="metrics-badges">
+            <div class="metric-badge">
+              <span class="metric-value">24/7</span>
+              <span class="metric-label">System Support</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">100+</span>
+              <span class="metric-label">Database Records</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">Weekly</span>
+              <span class="metric-label">Reports</span>
+            </div>
+          </div>
+
+          <!-- Expandable Details -->
+          <div class="experience-toggle">
+            <button class="toggle-btn" onclick="toggleDetail(this)">
+              <i class="fas fa-chevron-down"></i> Lihat Detail
+            </button>
+          </div>
+
+          <div class="experience-details" style="display: none">
+            <div class="detail-section">
+              <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
+              <ul>
+                <li>Pengelolaan database dan sistem informasi internal</li>
+                <li>Penyusunan laporan manajemen berkala</li>
+                <li>Dukungan data untuk operasional perusahaan</li>
+                <li>Backup dan maintenance database reguler</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Database</span>
+                <span class="skill-tag">Oracle</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">Data Management</span>
+                <span class="skill-tag">Query</span>
+              </div>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-star"></i> Pencapaian</h4>
+              <ul>
+                <li>Maintenance database 24/7 tanpa downtime</li>
+                <li>Mengelola 100+ database records dengan akurat</li>
+                <li>Automasi 30% report generation process</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: Staff Administrasi -->
+        <article class="experience-card">
+          <div class="experience-card-header">
+            <div class="header-content">
+              <h3>Staff Administrasi</h3>
+              <p class="company">
+                <i class="fas fa-building"></i> PT Citra Sukses Nusantara
+              </p>
+              <span class="period"
+                ><i class="fas fa-calendar"></i> Apr 2021 – Aug 2021 (4
+                bulan)</span
+              >
+            </div>
+          </div>
+
+          <p class="experience-summary">
+            Pengolahan data operasional dengan validasi akurasi dan pengecekan
+            berkala untuk memastikan data quality.
+          </p>
+
+          <!-- Metrics Badges -->
+          <div class="metrics-badges">
+            <div class="metric-badge">
+              <span class="metric-value">500+</span>
+              <span class="metric-label">Data Records</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">99%</span>
+              <span class="metric-label">Accuracy</span>
+            </div>
+            <div class="metric-badge">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">On-Time</span>
+            </div>
+          </div>
+
+          <!-- Expandable Details -->
+          <div class="experience-toggle">
+            <button class="toggle-btn" onclick="toggleDetail(this)">
+              <i class="fas fa-chevron-down"></i> Lihat Detail
+            </button>
+          </div>
+
+          <div class="experience-details" style="display: none">
+            <div class="detail-section">
+              <h4><i class="fas fa-tasks"></i> Tanggung Jawab</h4>
+              <ul>
+                <li>Pengolahan data dan laporan operasional</li>
+                <li>Validasi dan pengecekan akurasi data</li>
+                <li>Entry dan management database</li>
+                <li>Support administrative tasks</li>
+              </ul>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-tools"></i> Tools & Skills</h4>
+              <div class="skills-tags">
+                <span class="skill-tag">Data Entry</span>
+                <span class="skill-tag">Excel</span>
+                <span class="skill-tag">Validation</span>
+                <span class="skill-tag">Database</span>
+                <span class="skill-tag">Documentation</span>
+                <span class="skill-tag">Organization</span>
+              </div>
+            </div>
+            <div class="detail-section">
+              <h4><i class="fas fa-star"></i> Pencapaian</h4>
+              <ul>
+                <li>Olah 500+ data records dengan 99% akurasi</li>
+                <li>Zero error dalam data validation</li>
+                <li>Semua deliverable on-time</li>
+              </ul>
+            </div>
+          </div>
+        </article>
       </div>
+    </section>
 
-      <div class="project-tags">
-        <span class="tag">Excel</span>
-        <span class="tag">Pivot Table</span>
-        <span class="tag">Dashboard</span>
-        <span class="tag">Data Consolidation</span>
-      </div>
-
-      <button class="project-toggle" onclick="toggleProjectDetail(this)">
-        <i class="fas fa-chevron-down"></i> View Details
-      </button>
-
-      <div class="project-details" style="display: none;">
-        <div class="detail-content">
-          <h4>Process:</h4>
-          <ul>
-            <li>Data cleaning & validation from 5 source files</li>
-            <li>Linked formulas for real-time updates</li>
-            <li>Created KPI tracking (Target vs Actual)</li>
-            <li>Implemented conditional formatting for alerts</li>
-          </ul>
-        </div>
-        <div class="detail-content">
-          <h4>Tools & Techniques:</h4>
-          <ul>
-            <li>VLOOKUP, SUMIFS, PIVOT TABLE</li>
-            <li>Data validation & conditional formatting</li>
-            <li>Chart visualization (Column & Line charts)</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 2: Inventory Data Cleaning & Analysis -->
-    <article class="project-card">
-      <h3 class="project-title">Inventory Data Cleaning & Analysis</h3>
-      
-      <div class="project-meta">
-        <div class="project-item">
-          <span class="meta-label">Context:</span>
-          <p>Inventory records with duplicate entries, missing values, and inconsistent formats</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Approach:</span>
-          <p>Data cleaning using Excel & SQL; identified trends & optimization opportunities</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Outcome:</span>
-          <p>Reduced dead stock by 25%, improved inventory accuracy to 97%</p>
-        </div>
-      </div>
-
-      <div class="project-tags">
-        <span class="tag">Excel</span>
-        <span class="tag">SQL</span>
-        <span class="tag">Data Cleaning</span>
-        <span class="tag">Analysis</span>
-      </div>
-
-      <button class="project-toggle" onclick="toggleProjectDetail(this)">
-        <i class="fas fa-chevron-down"></i> View Details
-      </button>
-
-      <div class="project-details" style="display: none;">
-        <div class="detail-content">
-          <h4>Process:</h4>
-          <ul>
-            <li>Removed 500+ duplicate records using Excel Remove Duplicates</li>
-            <li>Used TRIM, UPPER functions to standardize formats</li>
-            <li>Identified & removed obsolete SKUs</li>
-            <li>SQL analysis to find slow-moving inventory</li>
-          </ul>
-        </div>
-        <div class="detail-content">
-          <h4>Tools & Techniques:</h4>
-          <ul>
-            <li>Find & Replace, Remove Duplicates, Data Validation</li>
-            <li>SQL SELECT & GROUP BY queries</li>
-            <li>Pivot analysis for trend identification</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 3: Customer Segmentation Analysis -->
-    <article class="project-card">
-      <h3 class="project-title">Customer Segmentation Analysis</h3>
-      
-      <div class="project-meta">
-        <div class="project-item">
-          <span class="meta-label">Context:</span>
-          <p>Needed to identify high-value customer segments for targeted marketing strategy</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Approach:</span>
-          <p>Analyzed purchase history using SQL; segmented by spending & frequency patterns</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Outcome:</span>
-          <p>Identified 3 key segments; enabled 40% improvement in marketing ROI</p>
-        </div>
-      </div>
-
-      <div class="project-tags">
-        <span class="tag">SQL</span>
-        <span class="tag">Analysis</span>
-        <span class="tag">Reporting</span>
-        <span class="tag">Insight</span>
-      </div>
-
-      <button class="project-toggle" onclick="toggleProjectDetail(this)">
-        <i class="fas fa-chevron-down"></i> View Details
-      </button>
-
-      <div class="project-details" style="display: none;">
-        <div class="detail-content">
-          <h4>Process:</h4>
-          <ul>
-            <li>Queried customer transaction data from database</li>
-            <li>Calculated RFM scores (Recency, Frequency, Monetary)</li>
-            <li>Segmented into Premium, Regular, & At-Risk groups</li>
-            <li>Generated actionable insights for retention strategy</li>
-          </ul>
-        </div>
-        <div class="detail-content">
-          <h4>Tools & Techniques:</h4>
-          <ul>
-            <li>SQL JOIN, GROUP BY, CASE statements</li>
-            <li>RFM analysis methodology</li>
-            <li>Excel reporting & visualization</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-
-    <!-- Project 4: Monthly KPI Reporting System -->
-    <article class="project-card">
-      <h3 class="project-title">Monthly KPI Reporting System</h3>
-      
-      <div class="project-meta">
-        <div class="project-item">
-          <span class="meta-label">Context:</span>
-          <p>Manual KPI compilation prone to errors and took 2 days per month</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Approach:</span>
-          <p>Built automated reporting system using Excel formulas & templates</p>
-        </div>
-        <div class="project-item">
-          <span class="meta-label">Outcome:</span>
-          <p>Automated 80% of process; reduced errors to zero; saved 40 hours/year</p>
-        </div>
-      </div>
-
-      <div class="project-tags">
-        <span class="tag">Excel</span>
-        <span class="tag">Automation</span>
-        <span class="tag">Reporting</span>
-        <span class="tag">Documentation</span>
-      </div>
-
-      <button class="project-toggle" onclick="toggleProjectDetail(this)">
-        <i class="fas fa-chevron-down"></i> View Details
-      </button>
-
-      <div class="project-details" style="display: none;">
-        <div class="detail-content">
-          <h4>Process:</h4>
-          <ul>
-            <li>Mapped all KPI sources & dependencies</li>
-            <li>Built master template with dynamic formulas</li>
-            <li>Created data validation for quality control</li>
-            <li>Documented process & created runbook for team</li>
-          </ul>
-        </div>
-        <div class="detail-content">
-          <h4>Tools & Techniques:</h4>
-          <ul>
-            <li>Advanced Excel: SUMIF, INDEX/MATCH, Pivot Tables</li>
-            <li>Named ranges for formula clarity</li>
-            <li>Data validation & error checking</li>
-          </ul>
-        </div>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ================= CERTIFICATIONS ================= -->
-<section id="certifications" class="section reveal certifications-section">
-  <h2><i class="fas fa-certificate"></i> Certifications</h2>
-  <p class="section-subtitle">Relevant certifications supporting data analysis and reporting skills.</p>
-
-  <div class="certifications-container">
-    <!-- Certification 1: Google Data Analytics -->
-    <article class="cert-card">
-      <div class="cert-header">
-        <div class="cert-badge">
-          <i class="fas fa-award"></i>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Google Data Analytics Certificate</h3>
-          <p class="cert-issuer">Google Career Certificates</p>
-          <p class="cert-focus">Data analysis, visualization, dashboards</p>
-        </div>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-year">2024 | Completed</span>
-      </div>
-    </article>
-
-    <!-- Certification 2: SQL for Data Analysis -->
-    <article class="cert-card">
-      <div class="cert-header">
-        <div class="cert-badge">
-          <i class="fas fa-code"></i>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">SQL for Data Analysis</h3>
-          <p class="cert-issuer">Udemy | Trainers from Revelo</p>
-          <p class="cert-focus">Query optimization, data retrieval, complex joins</p>
-        </div>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-year">2024 | Completed</span>
-      </div>
-    </article>
-
-    <!-- Certification 3: Excel Advanced Analytics -->
-    <article class="cert-card">
-      <div class="cert-header">
-        <div class="cert-badge">
-          <i class="fas fa-chart-bar"></i>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Excel Advanced Analytics</h3>
-          <p class="cert-issuer">Microsoft & LinkedIn Learning</p>
-          <p class="cert-focus">Pivot tables, VLOOKUP, data modeling</p>
-        </div>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-year">2024 | Completed</span>
-      </div>
-    </article>
-
-    <!-- Certification 4: Power BI Dashboard Development -->
-    <article class="cert-card">
-      <div class="cert-header">
-        <div class="cert-badge">
-          <i class="fas fa-chart-pie"></i>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Power BI Dashboard Development</h3>
-          <p class="cert-issuer">Microsoft Learning</p>
-          <p class="cert-focus">Data visualization, DAX, interactive reports</p>
-        </div>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-year">In Progress</span>
-      </div>
-    </article>
-
-    <!-- Certification 5: Google Sheets for Data Analysis -->
-    <article class="cert-card">
-      <div class="cert-header">
-        <div class="cert-badge">
-          <i class="fas fa-table"></i>
-        </div>
-        <div class="cert-content">
-          <h3 class="cert-title">Google Sheets for Data Analysis</h3>
-          <p class="cert-issuer">Google Workspace Specialization</p>
-          <p class="cert-focus">Sheets formulas, data automation, collaboration</p>
-        </div>
-      </div>
-      <div class="cert-meta">
-        <span class="cert-year">In Progress</span>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- ================= EDUCATION ================= -->
-<section id="education" class="section reveal education-section">
-  <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-  <p class="section-subtitle">Formal education and continuous learning background.</p>
-
-  <div class="education-container">
-    <article class="education-card">
-      <div class="education-header">
-        <div class="education-icon">
-          <i class="fas fa-school"></i>
-        </div>
-        <div class="education-content">
-          <h3 class="education-title">High School Diploma (Social Science)</h3>
-          <p class="education-school">SMA Negeri 19 Jakarta</p>
-          <p class="education-year">Graduated: 2019</p>
-        </div>
-      </div>
-      <p class="education-description">
-        Focused on analytical thinking, basic statistics, and independent learning in data analysis.
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section reveal projects-section">
+      <h2><i class="fas fa-chart-line"></i> Projects</h2>
+      <p class="section-subtitle">
+        Data analysis projects with live Tableau dashboards, code examples, and
+        interactive demos.
       </p>
-    </article>
 
-    <div class="education-note">
-      <p><strong>Continuous Learning:</strong> Actively pursuing professional certifications and online courses in data analytics, SQL, and business intelligence tools.</p>
-    </div>
-  </div>
-</section>
+      <div class="projects-container">
+        <!-- Project 1: Sales Performance Dashboard -->
+        <article class="project-card-v2">
+          <div class="project-header-v2">
+            <h3 class="project-title-v2">Olist E-Commerce Executive Summary</h3>
+            <div class="project-tags">
+              <span class="tag">Tableau</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Business Insight</span>
+            </div>
+          </div>
 
-<!-- ================= CONTACT ================= -->
-<section id="contact" class="section reveal contact-section">
-  <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
-  <p class="section-subtitle">Let's connect. Reach out via email, phone, or social media.</p>
+          <!-- Tableau Dashboard -->
+          <div class="project-section-container">
+            <h4 class="project-section-title">
+              <i class="fas fa-chart-pie"></i> Live Tableau Dashboard
+            </h4>
+            <div class="tableau-container">
+              <p class="tableau-note">
+                📊 Interactive Interactive Performance Dashboard
+              </p>
+              <div class="tableau-container">
+              <iframe
+                src="https://public.tableau.com/views/End-to-EndE-CommerceExecutiveSummaryOlistCaseStudy/Dashboard1?:embed=y&:showVizHome=n&:device=desktop"
+                width="100%"
+                height="550"
+                frameborder="0"
+                style="border-radius: 12px; border: 1px solid #e2e8f0; display: block; margin: 0 auto;">
+              </iframe>
+              <a
+                href="https://public.tableau.com/views/End-to-EndE-CommerceExecutiveSummaryOlistCaseStudy/Dashboard1"
+                target="_blank"
+                class="tableau-link"
+              >
+                <i class="fas fa-external-link-alt"></i> View Full Dashboard on
+                Tableau Public
+              </a>
+            </div>
+          </div>
 
-  <div class="contact-wrapper">
-    <!-- Contact Info Cards -->
-    <div class="contact-info-grid">
-      <!-- Email -->
-      <a href="mailto:iw792869@gmail.com" class="contact-info-card">
-        <div class="contact-card-icon">
-          <i class="fas fa-envelope"></i>
+          <!-- SQL Code -->
+          <div class="project-section-container">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+        <h4 class="project-section-title" style="margin: 0;">
+            <i class="fas fa-code"></i> SQL Query
+        </h4>
+        <div style="display: flex; gap: 10px;">
+            <button onclick="toggleSection('sql-content', this)" class="details-toggle-btn" style="padding: 6px 12px; font-size: 12px;">
+                <i class="fas fa-eye"></i> <span>Show Code</span>
+            </button>
         </div>
-        <h3>Email</h3>
-        <p>iw792869@gmail.com</p>
-      </a>
-
-      <!-- Phone / WhatsApp -->
-      <a href="https://wa.me/6289670025657" target="_blank" class="contact-info-card">
-        <div class="contact-card-icon">
-          <i class="fas fa-phone"></i>
-        </div>
-        <h3>WhatsApp</h3>
-        <p>+62 896-7002-5657</p>
-      </a>
-
-      <!-- Location -->
-      <div class="contact-info-card">
-        <div class="contact-card-icon">
-          <i class="fas fa-map-marker-alt"></i>
-        </div>
-        <h3>Location</h3>
-        <p>Jakarta, Indonesia</p>
-      </div>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/indrawijaya111" target="_blank" class="contact-info-card">
-        <div class="contact-card-icon">
-          <i class="fab fa-linkedin"></i>
-        </div>
-        <h3>LinkedIn</h3>
-        <p>indrawijaya111</p>
-      </a>
     </div>
 
-    <!-- Contact Form -->
-    <div class="contact-form-wrapper">
-      <h3>Send Me a Message</h3>
-      <form id="contactForm" action="https://formspree.io/f/xkoowayw" method="POST">
-        <div class="form-group">
-          <input 
-            type="text" 
-            name="name" 
-            placeholder="Full Name" 
-            required
-          >
-        </div>
-        <div class="form-group">
-          <input 
-            type="email" 
-            name="email" 
-            placeholder="Email Address" 
-            required
-          >
-        </div>
-        <div class="form-group">
-          <input 
-            type="text" 
-            name="subject" 
-            placeholder="Subject"
-          >
-        </div>
-        <div class="form-group">
-          <textarea 
-            name="message" 
-            placeholder="Your Message" 
-            rows="5" 
-            required
-          ></textarea>
-        </div>
-        <button type="submit" class="btn-contact">
-          <i class="fas fa-paper-plane"></i> Send Message
-        </button>
-      </form>
-      <div class="form-message" id="formMessage"></div>
+    <div id="sql-content" class="hidden-content" style="display: none;">
+        <pre><code id="language-sql" class="language-sql">-- Query: Top 5 Product Categories by Revenue (with English Translation)
+SELECT 
+    t.product_category_name_english AS product_category,
+    COUNT(DISTINCT o.order_id) AS total_orders,
+    ROUND(SUM(p.payment_value), 2) AS total_revenue
+FROM `olist.orders` o
+JOIN `olist.payments` p 
+    ON o.order_id = p.order_id
+JOIN `olist.items` i 
+    ON o.order_id = i.order_id
+JOIN `olist.products` pr 
+    ON i.product_id = pr.product_id
+JOIN `olist.product_category_name_translation` t 
+    ON pr.product_category_name = t.product_category_name
+WHERE o.order_status = 'delivered'
+GROUP BY 1
+ORDER BY total_revenue DESC
+LIMIT 5;</code></pre>
     </div>
-
-    <!-- Social Links -->
-    <div class="social-links-section">
-      <h3>Connect With Me</h3>
-      <div class="social-grid">
-        <a href="https://www.linkedin.com/in/indrawijaya111" target="_blank" class="social-icon linkedin" title="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://wa.me/6289670025657" target="_blank" class="social-icon whatsapp" title="WhatsApp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-        <a href="mailto:iw792869@gmail.com" class="social-icon email" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://instagram.com/wijaya_indraa" target="_blank" class="social-icon instagram" title="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="footer-wrapper">
-    <!-- Left: Name & Role -->
-    <div class="footer-left">
-      <div class="footer-brand">
-        <h3>Indra Wijaya</h3>
-        <p>Junior Data Analyst</p>
-      </div>
-    </div>
-
-    <!-- Center: Mini Navigation -->
-    <div class="footer-center">
-      <nav class="footer-nav">
-        <a href="#home" class="footer-nav-link">Home</a>
-        <a href="#skills" class="footer-nav-link">Skills</a>
-        <a href="#experience" class="footer-nav-link">Experience</a>
-        <a href="#projects" class="footer-nav-link">Projects</a>
-        <a href="#certifications" class="footer-nav-link">Certifications</a>
-        <a href="#education" class="footer-nav-link">Education</a>
-      </nav>
-    </div>
-
-    <!-- Right: Social Links -->
-    <div class="footer-right">
-      <div class="footer-socials">
-        <a href="https://www.linkedin.com/in/indrawijaya111" target="_blank" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com" target="_blank" class="footer-social-link" title="GitHub" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:iw792869@gmail.com" class="footer-social-link" title="Email" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Bottom: Tagline & Scroll Top -->
-  <div class="footer-bottom">
-    <p class="footer-tagline">&copy;Indra Wijaya | Focused on data accuracy, reporting efficiency, and business insight.</p>
-    <button class="scroll-top" id="scrollTop" title="Scroll to top" aria-label="Scroll to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
-  </div>
-</footer>
-
-<!-- Success Modal -->
-<div class="modal" id="successModal">
-  <div class="modal-content small-modal">
-    <div class="modal-header">
-      <h3><i class="fas fa-check-circle" style="color: #22c55e;"></i> Pesan Terkirim!</h3>
-      <button class="modal-close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <p>Terima kasih telah menghubungi saya. Saya akan segera merespon pesan Anda.</p>
-    </div>
-  </div>
 </div>
+          <!-- Demo Actions -->
+          <div class="project-section-container">
+            <h4 class="project-section-title">
+              <i class="fas fa-play"></i> Interactive Demo
+            </h4>
+            <div class="demo-actions">
+              <a
+                href="https://public.tableau.com/views/SalesPerformanceDashboard/Dashboard1"
+                target="_blank"
+                class="demo-btn demo-btn-tableau"
+              >
+                <i class="fas fa-external-link-alt"></i> Open in Tableau Public
+              </a>
+              <button
+                class="demo-btn demo-btn-copy"
+                onclick="copyCode(this, 'language-sql')"
+              >
+                <i class="fas fa-copy"></i> Copy SQL Code
+              </button>
+            </div>
+          </div>
 
-<script src="script.js"></script>
-</body>
+          <!-- Details Toggle -->
+          <div class="project-details-toggle">
+            <button class="details-toggle-btn" onclick="toggleDetails(this)">
+              <i class="fas fa-chevron-down"></i> Project Details
+            </button>
+            <div class="project-details-v2" style="display: none">
+              <div class="detail-item">
+                <h5><i class="fas fa-bullseye"></i> Context</h5>
+                <p>Developed a one-stop executive dashboard to monitor KPIs for 100k+ e-commerce transactions, enabling management to make rapid strategic decisions based on real-time business health.</p>
+              </div>
+              <div class="detail-item">
+                <h5><i class="fas fa-lightbulb"></i> Approach</h5>
+               <p>Processed data using SQL for revenue and logistics aggregation, then visualized insights in Tableau using geospatial mapping and trend analysis techniques.</p>
+              </div>
+              <div class="detail-item">
+                <h5><i class="fas fa-trophy"></i> Outcome</h5>
+                <p>Identified the <strong>Top 5 Product Categories</strong> contributing to major revenue and mapped market concentration in Sao Paulo to optimize regional marketing and logistics strategies.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section id="certifications" class="section reveal certifications-section">
+      <h2><i class="fas fa-certificate"></i> Certifications</h2>
+      <p class="section-subtitle">
+        Relevant certifications supporting data analysis and reporting skills.
+      </p>
+
+      <div class="certifications-container">
+        
+        <!-- Certification 2: SQL for Data Analysis -->
+        <article class="cert-card">
+          <div class="cert-header">
+            <div class="cert-badge">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Database Foundations</h3>
+              <p class="cert-issuer">Oracle Academy</p>
+              <p class="cert-focus">
+                Query optimization, Data Modeling, Integrity & Normalization
+              </p>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-year">2023 | Completed</span>
+          </div>
+        </article>
+
+        <!-- Certification 3: Excel Advanced Analytics -->
+        <article class="cert-card">
+          <div class="cert-header">
+            <div class="cert-badge">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="cert-content">
+              <h3 class="cert-title">Data Analysis Using Excel</h3>
+              <p class="cert-issuer">Great Learning</p>
+              <p class="cert-focus">
+                Data Summarization, Lookup Functions, Data Quality
+              </p>
+            </div>
+          </div>
+          <div class="cert-meta">
+            <span class="cert-year">2024 | Completed</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section id="education" class="section reveal education-section">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <p class="section-subtitle">
+        Formal education and continuous learning background.
+      </p>
+
+      <div class="education-container">
+        <article class="education-card">
+          <div class="education-header">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-content">
+              <h3 class="education-title">
+                High School Diploma (Social Science)
+              </h3>
+              <p class="education-school">SMA Negeri 19 Jakarta</p>
+              <p class="education-year">Graduated: 2019</p>
+            </div>
+          </div>
+          <p class="education-description">
+            Focused on analytical thinking, basic statistics, and independent
+            learning in data analysis.
+          </p>
+        </article>
+
+        <div class="education-note">
+          <p>
+            <strong>Continuous Learning:</strong> Actively pursuing professional
+            certifications and online courses in data analytics, SQL, and
+            business intelligence tools.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section reveal contact-section">
+      <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+      <p class="section-subtitle">
+        Let's connect. Reach out via email, phone, or social media.
+      </p>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Cards -->
+        <div class="contact-info-grid">
+          <!-- Email -->
+          <a href="mailto:iw792869@gmail.com" class="contact-info-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h3>Email</h3>
+            <p>iw792869@gmail.com</p>
+          </a>
+
+          <!-- Phone / WhatsApp -->
+          <a
+            href="https://wa.me/6289670025657"
+            target="_blank"
+            class="contact-info-card"
+          >
+            <div class="contact-card-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <h3>WhatsApp</h3>
+            <p>+62 896-7002-5657</p>
+          </a>
+
+          <!-- Location -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Location</h3>
+            <p>Jakarta, Indonesia</p>
+          </div>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/indrawijaya111"
+            target="_blank"
+            class="contact-info-card"
+          >
+            <div class="contact-card-icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>indrawijaya111</p>
+          </a>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <h3>Send Me a Message</h3>
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xkoowayw"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="text" name="subject" placeholder="Subject" />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-contact">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+          <div class="form-message" id="formMessage"></div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links-section">
+          <h3>Connect With Me</h3>
+          <div class="social-grid">
+            <a
+              href="https://www.linkedin.com/in/indrawijaya111"
+              target="_blank"
+              class="social-icon linkedin"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://wa.me/6289670025657"
+              target="_blank"
+              class="social-icon whatsapp"
+              title="WhatsApp"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a
+              href="mailto:iw792869@gmail.com"
+              class="social-icon email"
+              title="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://instagram.com/wijaya_indraa"
+              target="_blank"
+              class="social-icon instagram"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <!-- Left: Name & Role -->
+        <div class="footer-left">
+          <div class="footer-brand">
+            <h3>Indra Wijaya</h3>
+            <p>Junior Data Analyst</p>
+          </div>
+        </div>
+
+        <!-- Center: Mini Navigation -->
+        <div class="footer-center">
+          <nav class="footer-nav">
+            <a href="#home" class="footer-nav-link">Home</a>
+            <a href="#skills" class="footer-nav-link">Skills</a>
+            <a href="#experience" class="footer-nav-link">Experience</a>
+            <a href="#projects" class="footer-nav-link">Projects</a>
+            <a href="#certifications" class="footer-nav-link">Certifications</a>
+            <a href="#education" class="footer-nav-link">Education</a>
+          </nav>
+        </div>
+
+        <!-- Right: Social Links -->
+        <div class="footer-right">
+          <div class="footer-socials">
+            <a
+              href="https://www.linkedin.com/in/indrawijaya111"
+              target="_blank"
+              class="footer-social-link"
+              title="LinkedIn"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://github.com"
+              target="_blank"
+              class="footer-social-link"
+              title="GitHub"
+              aria-label="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="mailto:iw792869@gmail.com"
+              class="footer-social-link"
+              title="Email"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom: Tagline & Scroll Top -->
+      <div class="footer-bottom">
+        <p class="footer-tagline">
+          &copy;Indra Wijaya | Focused on data accuracy, reporting efficiency,
+          and business insight.
+        </p>
+        <button
+          class="scroll-top"
+          id="scrollTop"
+          title="Scroll to top"
+          aria-label="Scroll to top"
+        >
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+      <div class="modal-content small-modal">
+        <div class="modal-header">
+          <h3>
+            <i class="fas fa-check-circle" style="color: #22c55e"></i> Pesan
+            Terkirim!
+          </h3>
+          <button class="modal-close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Terima kasih telah menghubungi saya. Saya akan segera merespon pesan
+            Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
